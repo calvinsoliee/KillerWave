@@ -23,6 +23,7 @@ public class PlayerSpawner : MonoBehaviour
 		playerShip.name = "Player";
 		playerShip.transform.SetParent(this.transform);
 		playerShip.transform.position = Vector3.zero;
+		playerShip.GetComponentInChildren<ParticleSystem>().transform.localScale = new Vector3(25, 25, 25);
 	}
 }
 
